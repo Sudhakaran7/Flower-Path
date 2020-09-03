@@ -1,0 +1,71 @@
+You have N gardens, labelled 1 to N.  In each garden, you want to plant one of 4 types of flowers.
+paths[i] = [x, y] describes the existence of a bidirectional path from garden x to garden y.
+Also, there is no garden that has more than 3 paths coming into or leaving it.
+Your task is to choose a flower type for each garden such that, for any two gardens connected by a path, they have different types of flowers.
+Return any such a choice as an array answer, where answer[i] is the type of flower planted in the (i+1)-th garden.  The flower types are denoted 1, 2, 3, or 4.  
+It is guaranteed an answer exists.
+
+Input Description:
+First line contains, N and M as integers as input.(1<N,M<1000)
+Rest line contains, Mx2 as integers in matrix.(matrix[i]<M)
+
+Output Description:
+Print the array is the type of flower planted in the garden.
+
+Sample Input:
+3 3
+1 2
+2 3
+3 1
+
+Sample Output:
+1 2 3
+
+Explanation:
+The given plant types are 1,2,3 and the path are (1,2),(2,3),(3,1).so the plant path is 1,2,3.
+
+Sample Input:
+4 2
+1 1
+0 1
+
+Sample Output:
+1 2
+
+Sample Input:
+4 6
+1 2
+2 3
+3 4
+4 1
+1 2
+3 4
+
+Sample Output:
+1 2 1 2 1 1
+
+Sample Input:
+3 3
+0 1
+1 2
+2 1
+
+Sample Output:
+1 2 2
+
+Sample Input:
+4 2
+0 0
+1 1
+
+Sample Output:
+1 1
+
+Sample Input:
+3 3
+1 1
+2 2
+3 3
+
+Sample Output:
+1 1 1
